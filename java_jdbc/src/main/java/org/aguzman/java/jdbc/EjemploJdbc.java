@@ -13,7 +13,7 @@ public class EjemploJdbc {
             Statement stmt = conn.createStatement();
             ResultSet resultado = stmt.executeQuery("select * from emple where c_repar = 15");
             while (resultado.next()){
-                System.out.println(resultado.getString("ap_y_nom"));
+                System.out.println(resultado.getInt("n_emple"));
 
             }
             resultado.close();
